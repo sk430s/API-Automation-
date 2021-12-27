@@ -1,0 +1,133 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Username>em</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">em=123</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soap:Header>
+    <soap:Body>
+        <ns3:createTicketRequest xmlns="http://cio.att.com/commonheader/v3" xmlns:ns2="http://tktsvc.aots.att.com/ticket" xmlns:ns3="http://aots.att.com/ticket/v1" xmlns:ns4="http://cio.att.com/CommonHeader/v1">
+            <WSHeader>
+                <WSContext>
+                    <FromAppId>EM</FromAppId>
+                    <SourceIPAddress>aotswjl.test.att.com</SourceIPAddress>
+                </WSContext>
+            </WSHeader>
+            <ns3:createTicketInput>
+                <ns2:RemoteAgentID>bvoip123</ns2:RemoteAgentID>
+                <ns2:ClientTicketNum></ns2:ClientTicketNum>
+                <ns2:FunctionalArea>GLOBAL_AM</ns2:FunctionalArea>
+                <ns2:Log></ns2:Log>
+                <ns2:ProblemAbstract>Test only</ns2:ProblemAbstract>
+                <ns2:ReptRequestType>Informational</ns2:ReptRequestType>
+                <ns2:ReptSvcImpactFlag>No</ns2:ReptSvcImpactFlag>
+                <ns2:Severity>5 - Normal</ns2:Severity>
+                <ns2:TicketType>WEB</ns2:TicketType>
+                <ns2:ReportedBy>SHIPRA KUMARI</ns2:ReportedBy>
+                <ns2:ReportPhone>0402599999</ns2:ReportPhone>
+                <ns2:TicketSource>EM</ns2:TicketSource>
+                <ns2:TroubleReptDescText>Informational</ns2:TroubleReptDescText>
+                <ns2:ReporterEmailAddr>shiprkum@in.ibm.com</ns2:ReporterEmailAddr>
+                <ns2:AccountContactName>Frank</ns2:AccountContactName>
+                <ns2:AccountPhone>9082348256</ns2:AccountPhone>
+                <ns2:CustomerChronic>No</ns2:CustomerChronic>
+                <ns2:LogUserID>bvoip123</ns2:LogUserID>
+                <ns2:LogUserName>SHIPRA KUMARI</ns2:LogUserName>
+                <ns2:LogUserPhone>0402599999</ns2:LogUserPhone>
+                <ns2:PowerToCPE>Y</ns2:PowerToCPE>
+                <ns2:TroubleReptCode>39</ns2:TroubleReptCode>
+                <ns2:AccountContactEmail>fsinkovits@att.com</ns2:AccountContactEmail>
+                <ns2:CallingTo></ns2:CallingTo>
+                <ns2:CompanyID>91ayqo66</ns2:CompanyID>
+                <ns2:ReporterEmailNotifyFlag>No</ns2:ReporterEmailNotifyFlag>
+                <ns2:DispatchAuthorized>N</ns2:DispatchAuthorized>
+                <ns2:SeverityClassification></ns2:SeverityClassification>
+                <ns2:ContractType></ns2:ContractType>
+                <ns2:UserID>EM_SAPrimary_Name update ,EM_LCON_Name_Phone_Email update </ns2:UserID>
+                <ns2:ValidateContactInfo>Yes</ns2:ValidateContactInfo>
+                <ns2:ValidateDispatchAuth>Yes</ns2:ValidateDispatchAuth>
+                <ns2:ValidateLCONInfo>Yes</ns2:ValidateLCONInfo>
+                <ns2:ValidateLocationAccessHours>Yes</ns2:ValidateLocationAccessHours>
+                <ns2:ValidatePowerToCPE>Yes</ns2:ValidatePowerToCPE>
+                <ns2:ValidateTestAuth>Yes</ns2:ValidateTestAuth>
+                <ns2:ValidationResponsesRcvd>Yes</ns2:ValidationResponsesRcvd>
+            </ns3:createTicketInput>
+            <ns3:assetInput>
+                <ns2:AssetID>US2918SDOCA89R</ns2:AssetID>
+                <ns2:ClientName>AT&amp;T BVOIP Customer D</ns2:ClientName>
+                <ns2:OrgGroup>SK7773</ns2:OrgGroup>
+                <ns2:GRC>DNA</ns2:GRC>
+                <ns2:MCN>SL1533</ns2:MCN>
+                <ns2:CircuitID>7323683817</ns2:CircuitID>
+                <ns2:CountryCode>USA</ns2:CountryCode>
+                <ns2:CallbackContact></ns2:CallbackContact>
+                <ns2:CallbackPhone></ns2:CallbackPhone>
+                <ns2:BvoipIndicator>Yes</ns2:BvoipIndicator>
+                <ns2:BvoipAddress>200 S LAUREL AVE,MIDDLETOWN,NJ,USA,07748</ns2:BvoipAddress>
+                <ns2:BvoipCity>MIDDLETOWN</ns2:BvoipCity>
+                <ns2:BvoipStateProvince>NJ</ns2:BvoipStateProvince>
+                <ns2:BvoipCountryCode>USA</ns2:BvoipCountryCode>
+                <ns2:AgencyID></ns2:AgencyID>
+                <ns2:AgencyName>AT&amp;T BVOIP Customer D</ns2:AgencyName>
+                <ns2:LocationDetailsInfoList>
+                    <ns2:LocationDetailsInfo>
+                        <ns2:LocationContactName>MC</ns2:LocationContactName>
+                        <ns2:LocationContactPhone>7324204400</ns2:LocationContactPhone>
+                        <ns2:LocationContactEmail>mc9844@att.com</ns2:LocationContactEmail>
+                        <ns2:PremiseAccessHoursInfoList>
+                            <ns2:AccessHoursInfo>
+                                <ns2:DayOfWeek>MON</ns2:DayOfWeek>
+                                <ns2:Start>08:00</ns2:Start>
+                                <ns2:End>17:00</ns2:End>
+                            </ns2:AccessHoursInfo>
+                            <ns2:AccessHoursInfo>
+                                <ns2:DayOfWeek>TUE</ns2:DayOfWeek>
+                                <ns2:Start>08:00</ns2:Start>
+                                <ns2:End>17:00</ns2:End>
+                            </ns2:AccessHoursInfo>
+                            <ns2:AccessHoursInfo>
+                                <ns2:DayOfWeek>WED</ns2:DayOfWeek>
+                                <ns2:Start>08:00</ns2:Start>
+                                <ns2:End>17:00</ns2:End>
+                            </ns2:AccessHoursInfo>
+                            <ns2:AccessHoursInfo>
+                                <ns2:DayOfWeek>THU</ns2:DayOfWeek>
+                                <ns2:Start>08:00</ns2:Start>
+                                <ns2:End>17:00</ns2:End>
+                            </ns2:AccessHoursInfo>
+                            <ns2:AccessHoursInfo>
+                                <ns2:DayOfWeek>FRI</ns2:DayOfWeek>
+                                <ns2:Start>08:00</ns2:Start>
+                                <ns2:End>17:00</ns2:End>
+                            </ns2:AccessHoursInfo>
+                            <ns2:AccessHoursInfo>
+                                <ns2:DayOfWeek>SAT</ns2:DayOfWeek>
+                                <ns2:Start>08:00</ns2:Start>
+                                <ns2:End>17:00</ns2:End>
+                            </ns2:AccessHoursInfo>
+                            <ns2:AccessHoursInfo>
+                                <ns2:DayOfWeek>SUN</ns2:DayOfWeek>
+                                <ns2:Start>08:00</ns2:Start>
+                                <ns2:End>17:00</ns2:End>
+                            </ns2:AccessHoursInfo>
+                        </ns2:PremiseAccessHoursInfoList>
+                        <ns2:LocationDetailsType>L</ns2:LocationDetailsType>
+                    </ns2:LocationDetailsInfo>
+                </ns2:LocationDetailsInfoList>
+                <ns2:SOC>1J</ns2:SOC>
+                <ns2:BvoipProbeIndicator>N</ns2:BvoipProbeIndicator>
+                <ns2:GDBAssetObjectID>84773296</ns2:GDBAssetObjectID>
+                <ns2:GDBContactObjectID>0</ns2:GDBContactObjectID>
+                <ns2:GDBOrgObjectID>0</ns2:GDBOrgObjectID>
+                <ns2:ResellerIndicator>N</ns2:ResellerIndicator>
+            </ns3:assetInput>
+            <ns3:createControlInput>
+                <ns2:AssetLookupType>BVOIP_RTR</ns2:AssetLookupType>
+                <ns2:CreateType>U</ns2:CreateType>
+                <ns2:RetrieveAssetInfo>R</ns2:RetrieveAssetInfo>
+            </ns3:createControlInput>
+        </ns3:createTicketRequest>
+    </soap:Body>
+</soap:Envelope>

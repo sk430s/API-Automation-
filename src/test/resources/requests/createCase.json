@@ -1,0 +1,23 @@
+{
+"short_description" : "Creating Case ticket for BMP",
+"contact_type" : "web",
+"comments" : "Testing Create Ticket for IPFLEx using API",
+"is_test_authorized" : "no",
+"power_to_cpe" : "yes",
+"is_dispatch_authorized" : "no",
+"account" : "Home Depot 083",
+"contact" : "",
+"priority" : "3",
+"category" : "Informational",
+"due_date" : "2021-02-27 00:00:00",
+"contactfirstname" : "SHIPRA",
+"contactlastname" : "KUMARI",
+"contact_phone" : "0402599999",
+"reported_trouble" : "Voice over IP Trouble",
+"primary_site_contact_name" : "RAMAKRISHNA CHAPPIDI",
+"primary_site_contact_phone" : "6192661789",
+"primary_site_contact_email" : "rc668p@att.com",
+"site_access_hours" : "{\"listofaccesshour\":[{\"day_of_week\":\"MON\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"TUE\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"WED\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"THU\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"FRI\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"SAT\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"SUN\",\"start\":\"08:00\",\"end\":\"17:00\"}]}",
+"reported_item" : "Home Depot 083 - IP Router",
+"reported_type" : "Install Base Item"
+}

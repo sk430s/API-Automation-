@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25829" started-at="2021-12-13T15:05:17 EST" finished-at="2021-12-13T15:05:43 EST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25829" started-at="2021-12-13T15:05:17 EST" finished-at="2021-12-13T15:05:43 EST">
+      <class name="com.servicenow.SNAPIAutomation.TNTicketE2EFlow">
+        <test-method status="PASS" signature="beforeTestClass()[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="beforeTestClass" is-config="true" duration-ms="104" started-at="2021-12-13T15:05:17 EST" finished-at="2021-12-13T15:05:17 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestClass -->
+        <test-method status="PASS" signature="createCasephoneNum(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="createCasephoneNum" duration-ms="4208" started-at="2021-12-13T15:05:17 EST" description="Createcase for EM TelePhoneNumber Ticket" data-provider="TelePhoneNumbers" finished-at="2021-12-13T15:05:22 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18472581905]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCasephoneNum -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="12" started-at="2021-12-13T15:05:22 EST" finished-at="2021-12-13T15:05:22 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createCasephoneNum status=SUCCESS method=TNTicketE2EFlow.createCasephoneNum(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="createCasephoneNum(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="createCasephoneNum" duration-ms="585" started-at="2021-12-13T15:05:22 EST" description="Createcase for EM TelePhoneNumber Ticket" data-provider="TelePhoneNumbers" finished-at="2021-12-13T15:05:22 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14082256502]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCasephoneNum -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-13T15:05:22 EST" finished-at="2021-12-13T15:05:22 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createCasephoneNum status=SUCCESS method=TNTicketE2EFlow.createCasephoneNum(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="createCasephoneNum(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="createCasephoneNum" duration-ms="594" started-at="2021-12-13T15:05:22 EST" description="Createcase for EM TelePhoneNumber Ticket" data-provider="TelePhoneNumbers" finished-at="2021-12-13T15:05:23 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12168447367]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCasephoneNum -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-13T15:05:23 EST" finished-at="2021-12-13T15:05:23 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createCasephoneNum status=SUCCESS method=TNTicketE2EFlow.createCasephoneNum(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="createCasephoneNum(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="createCasephoneNum" duration-ms="1525" started-at="2021-12-13T15:05:23 EST" description="Createcase for EM TelePhoneNumber Ticket" data-provider="TelePhoneNumbers" finished-at="2021-12-13T15:05:24 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18472581795]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCasephoneNum -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-13T15:05:24 EST" finished-at="2021-12-13T15:05:24 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createCasephoneNum status=SUCCESS method=TNTicketE2EFlow.createCasephoneNum(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="logUpdate" signature="logUpdate(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="674" finished-at="2021-12-13T15:05:25 EST" started-at="2021-12-13T15:05:24 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.createCasephoneNum" data-provider="TelePhoneNumbers" description="Log Update for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18472581905]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logUpdate -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-13T15:05:25 EST" finished-at="2021-12-13T15:05:25 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logUpdate status=SUCCESS method=TNTicketE2EFlow.logUpdate(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="logUpdate" signature="logUpdate(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="1304" finished-at="2021-12-13T15:05:26 EST" started-at="2021-12-13T15:05:25 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.createCasephoneNum" data-provider="TelePhoneNumbers" description="Log Update for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14082256502]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logUpdate -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-13T15:05:26 EST" finished-at="2021-12-13T15:05:26 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logUpdate status=SUCCESS method=TNTicketE2EFlow.logUpdate(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="logUpdate" signature="logUpdate(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="2676" finished-at="2021-12-13T15:05:29 EST" started-at="2021-12-13T15:05:26 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.createCasephoneNum" data-provider="TelePhoneNumbers" description="Log Update for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12168447367]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logUpdate -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-13T15:05:29 EST" finished-at="2021-12-13T15:05:29 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logUpdate status=SUCCESS method=TNTicketE2EFlow.logUpdate(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="logUpdate" signature="logUpdate(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="1324" finished-at="2021-12-13T15:05:30 EST" started-at="2021-12-13T15:05:29 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.createCasephoneNum" data-provider="TelePhoneNumbers" description="Log Update for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18472581795]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logUpdate -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-13T15:05:30 EST" finished-at="2021-12-13T15:05:30 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logUpdate status=SUCCESS method=TNTicketE2EFlow.logUpdate(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="caseEscalation" signature="caseEscalation(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="3001" finished-at="2021-12-13T15:05:33 EST" started-at="2021-12-13T15:05:30 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.logUpdate" data-provider="TelePhoneNumbers" description="Case Escalation for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18472581905]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseEscalation -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-13T15:05:33 EST" finished-at="2021-12-13T15:05:33 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=caseEscalation status=SUCCESS method=TNTicketE2EFlow.caseEscalation(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="caseEscalation" signature="caseEscalation(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="782" finished-at="2021-12-13T15:05:34 EST" started-at="2021-12-13T15:05:33 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.logUpdate" data-provider="TelePhoneNumbers" description="Case Escalation for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14082256502]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseEscalation -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-13T15:05:34 EST" finished-at="2021-12-13T15:05:34 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=caseEscalation status=SUCCESS method=TNTicketE2EFlow.caseEscalation(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="caseEscalation" signature="caseEscalation(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="1263" finished-at="2021-12-13T15:05:35 EST" started-at="2021-12-13T15:05:34 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.logUpdate" data-provider="TelePhoneNumbers" description="Case Escalation for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12168447367]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseEscalation -->
+        <test-method name="caseEscalation" signature="caseEscalation(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="2926" finished-at="2021-12-13T15:05:38 EST" started-at="2021-12-13T15:05:35 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.logUpdate" data-provider="TelePhoneNumbers" description="Case Escalation for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18472581795]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseEscalation -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-13T15:05:35 EST" finished-at="2021-12-13T15:05:35 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=caseEscalation status=SUCCESS method=TNTicketE2EFlow.caseEscalation(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-13T15:05:38 EST" finished-at="2021-12-13T15:05:38 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=caseEscalation status=SUCCESS method=TNTicketE2EFlow.caseEscalation(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="caseClosure" signature="caseClosure(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="2096" finished-at="2021-12-13T15:05:40 EST" started-at="2021-12-13T15:05:38 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.caseEscalation" data-provider="TelePhoneNumbers" description="Case closure for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18472581905]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseClosure -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-13T15:05:40 EST" finished-at="2021-12-13T15:05:40 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=caseClosure status=SUCCESS method=TNTicketE2EFlow.caseClosure(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="caseClosure" signature="caseClosure(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="536" finished-at="2021-12-13T15:05:41 EST" started-at="2021-12-13T15:05:40 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.caseEscalation" data-provider="TelePhoneNumbers" description="Case closure for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14082256502]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseClosure -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-13T15:05:41 EST" finished-at="2021-12-13T15:05:41 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=caseClosure status=SUCCESS method=TNTicketE2EFlow.caseClosure(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method name="caseClosure" signature="caseClosure(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="1356" finished-at="2021-12-13T15:05:42 EST" started-at="2021-12-13T15:05:41 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.caseEscalation" data-provider="TelePhoneNumbers" description="Case closure for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12168447367]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseClosure -->
+        <test-method name="caseClosure" signature="caseClosure(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" status="PASS" duration-ms="558" finished-at="2021-12-13T15:05:43 EST" started-at="2021-12-13T15:05:42 EST" depends-on-methods="com.servicenow.SNAPIAutomation.TNTicketE2EFlow.caseEscalation" data-provider="TelePhoneNumbers" description="Case closure for EM TelePhoneNumber Ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18472581795]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseClosure -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-13T15:05:42 EST" finished-at="2021-12-13T15:05:42 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=caseClosure status=SUCCESS method=TNTicketE2EFlow.caseClosure(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-13T15:05:43 EST" finished-at="2021-12-13T15:05:43 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=caseClosure status=SUCCESS method=TNTicketE2EFlow.caseClosure(java.lang.String)[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.servicenow.SNAPIAutomation.TNTicketE2EFlow@18bf3d14]" name="flushReport" is-config="true" duration-ms="251" started-at="2021-12-13T15:05:43 EST" finished-at="2021-12-13T15:05:43 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.servicenow.SNAPIAutomation.TNTicketE2EFlow -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
