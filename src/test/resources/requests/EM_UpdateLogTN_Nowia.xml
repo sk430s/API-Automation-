@@ -1,0 +1,38 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Username>em</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">em=123</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soap:Header>
+    <soap:Body>
+        <ns3:updateTicketRequest xmlns="http://cio.att.com/commonheader/v3" xmlns:ns2="http://tktsvc.aots.att.com/ticket" xmlns:ns3="http://aots.att.com/ticket/v1" xmlns:ns4="http://cio.att.com/CommonHeader/v1">
+            <WSHeader>
+                <WSContext>
+                    <FromAppId>EM</FromAppId>
+                    <SourceIPAddress>aotsyjl.test.att.com</SourceIPAddress>
+                </WSContext>
+            </WSHeader>
+            <ns3:updateTicketInput>
+                <ns2:Log>Adding new notes from EM to ATTNOW</ns2:Log>
+                <ns2:Severity>5 - Normal</ns2:Severity>
+                <ns2:LogUserID>testsk7773</ns2:LogUserID>
+                <ns2:LogUserName>NEENA JETHANI</ns2:LogUserName>
+                <ns2:NextCheckTime>1639003777</ns2:NextCheckTime>
+                <ns2:ReporterEmailNotifyFlag>No</ns2:ReporterEmailNotifyFlag>
+                <ns2:ReportedBy>NEENA JETHANI</ns2:ReportedBy>
+                <ns2:ReportPhone>7324200703</ns2:ReportPhone>
+                <ns2:ReporterEmailAddr>nj5695@exo.att.com</ns2:ReporterEmailAddr>
+                <ns2:SeverityClassification></ns2:SeverityClassification>
+                <ns2:UserID>EM_Add Notes</ns2:UserID>
+            </ns3:updateTicketInput>
+            <ns3:updateControlInput>
+                <ns2:FunctionalArea>GLOBAL_AM</ns2:FunctionalArea>
+                <ns2:TicketNum>CS0012986</ns2:TicketNum>
+                <ns2:LockForUpdate>false</ns2:LockForUpdate>
+            </ns3:updateControlInput>
+        </ns3:updateTicketRequest>
+    </soap:Body>
+</soap:Envelope>

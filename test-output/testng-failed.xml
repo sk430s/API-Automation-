@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RetryFailedTestSuite]">
+  <listeners>
+    <listener class-name="Analyser.TestTransformer"/>
+    <listener class-name="Analyser.TestListeners"/>
+  </listeners>
+  <test thread-count="5" name="RetryMultipleFailedTestCases(failed)">
+    <classes>
+      <class name="com.servicenow.SNAPIAutomation.AOTSTM_RTR">
+        <methods>
+          <include name="testCreateAOTSTM_RTR"/>
+          <include name="afterMethod"/>
+          <include name="flushReport"/>
+          <include name="testClose_AOTSTM_RTR"/>
+          <include name="beforeTestClass"/>
+        </methods>
+      </class> <!-- com.servicenow.SNAPIAutomation.AOTSTM_RTR -->
+      <class name="com.servicenow.SNAPIAutomation.EM_RTR">
+        <methods>
+          <include name="testRESTTicketCase_EM_TN"/>
+          <include name="afterMethod"/>
+          <include name="testRESTTicketClose_EM_TN"/>
+          <include name="flushReport"/>
+          <include name="beforeTestClass"/>
+          <include name="testRESTTicketUpdate_EM_TN"/>
+        </methods>
+      </class> <!-- com.servicenow.SNAPIAutomation.EM_RTR -->
+    </classes>
+  </test> <!-- RetryMultipleFailedTestCases(failed) -->
+</suite> <!-- Failed suite [RetryFailedTestSuite] -->

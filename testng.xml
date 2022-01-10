@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="RetryFailedTestSuite" verbose="1" >
+ <listeners>
+	<listener class-name="Analyser.TestTransformer"/>
+	<listener class-name="Analyser.TestListeners"/>
+ </listeners>
+
+ <test name="RetryMultipleFailedTestCases">
+		<classes>
+			<class name="com.servicenow.SNAPIAutomation.AOTSTM_RTR"/>
+			<class name="com.servicenow.SNAPIAutomation.EM_RTR"/>
+		</classes>
+ </test>
+</suite>

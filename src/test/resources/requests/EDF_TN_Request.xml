@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mes="http://csi.cingular.com/CSI/Namespaces/GlobalComputingPlatformServiceDelivery/InfrastructureCommon/Types/Public/MessageHeader.xsd" xmlns:cin="http://csi.att.com/CSI/Namespaces/GlobalComputingPlatformServiceDelivery/Types/Public/CommonDataModel.xsd">
+    <soapenv:Header>
+        <mes:MessageHeader>
+            <mes:TrackingMessageHeader>
+                <mes:infrastructureVersion>86</mes:infrastructureVersion>
+                <mes:applicationName>GlobalComputingPlatformServiceDelivery</mes:applicationName>
+                <mes:version>236</mes:version>
+                <mes:messageId>hsjkjew4424sij</mes:messageId>
+                <mes:originatorId>AOTS-TS</mes:originatorId>
+                <mes:timeToLive>90000</mes:timeToLive>
+                <mes:dateTimeStamp>2021-11-29T15:10:55Z</mes:dateTimeStamp>
+                <mes:uniqueTransactionId>hsjkjew4424sij</mes:uniqueTransactionId>
+            </mes:TrackingMessageHeader>
+            <mes:SecurityMessageHeader>
+                <mes:userName>aotstm</mes:userName>
+                <mes:userPassword>aotstm0917</mes:userPassword>
+            </mes:SecurityMessageHeader>
+            <mes:SequenceMessageHeader>
+                <mes:sequenceNumber>1</mes:sequenceNumber>
+                <mes:totalInSequence>1</mes:totalInSequence>
+            </mes:SequenceMessageHeader>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <m:InquireEnterpriseCustomerSiteDetailsRequest xmlns:m="http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireEnterpriseCustomerSiteDetailsRequest.xsd">
+            <m:transactionType>CustomerSiteDetailByTN</m:transactionType>
+            <m:TelephoneNumber>
+                <cin:unparsedNumber>7323683817</cin:unparsedNumber>
+            </m:TelephoneNumber>
+        </m:InquireEnterpriseCustomerSiteDetailsRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

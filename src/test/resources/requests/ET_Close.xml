@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken>
+                <wsse:Username>expresst</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">etkt0813</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soap-env:Header>
+    <soap-env:Body>
+        <ns0:updateTicketRequest xmlns:ns0="http://aots.att.com/ticket/v1">
+            <ns1:WSHeader xmlns:ns1="http://cio.att.com/commonheader/v3">
+                <ns1:WSContext>
+                    <ns1:FromAppId>ETT_aotsRequestToClose</ns1:FromAppId>
+                    <ns1:SourceIPAddress>express-ticketing-api-65697c7f48-2lwfm</ns1:SourceIPAddress>
+                </ns1:WSContext>
+            </ns1:WSHeader>
+            <ns0:updateTicketInput>
+                <ns2:Log xmlns:ns2="http://tktsvc.aots.att.com/ticket">CUSTOMER TICKET CLOSURE REQUEST \nEXPRESS TICKETING CUSTOMER STATES: 
+Contact Name: M C
+Contact Phone: (732) 400-0100
+Contact Email Address: rr@att.com
+
+
+close ticket</ns2:Log>
+                <ns3:LogUserID xmlns:ns3="http://tktsvc.aots.att.com/ticket">ETT</ns3:LogUserID>
+                <ns4:LogUserName xmlns:ns4="http://tktsvc.aots.att.com/ticket">Express Ticketing</ns4:LogUserName>
+                <ns5:LogUserPhone xmlns:ns5="http://tktsvc.aots.att.com/ticket"></ns5:LogUserPhone>
+                <ns6:SecondaryActivityTypeCode xmlns:ns6="http://tktsvc.aots.att.com/ticket">99</ns6:SecondaryActivityTypeCode>
+                <ns7:NextCheckTime xmlns:ns7="http://tktsvc.aots.att.com/ticket">1636395819</ns7:NextCheckTime>
+                <ns8:ReferralAction xmlns:ns8="http://tktsvc.aots.att.com/ticket">RequestToClose</ns8:ReferralAction>
+                <ns9:UserID xmlns:ns9="http://tktsvc.aots.att.com/ticket">ETT</ns9:UserID>
+                <ns10:RFTicketNumList xmlns:ns10="http://tktsvc.aots.att.com/ticket"></ns10:RFTicketNumList>
+            </ns0:updateTicketInput>
+            <ns0:updateControlInput>
+                <ns11:FunctionalArea xmlns:ns11="http://tktsvc.aots.att.com/ticket">GLOBAL_AM</ns11:FunctionalArea>
+                <ns12:TicketNum xmlns:ns12="http://tktsvc.aots.att.com/ticket"></ns12:TicketNum>
+                <ns13:LockForUpdate xmlns:ns13="http://tktsvc.aots.att.com/ticket">false</ns13:LockForUpdate>
+            </ns0:updateControlInput>
+        </ns0:updateTicketRequest>
+    </soap-env:Body>
+</soap-env:Envelope>

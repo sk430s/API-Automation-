@@ -1,0 +1,56 @@
+<soapenv:Envelope soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ch="http://cio.att.com/commonheader/v3" xmlns:ns="http://aots.att.com/ticket/v1" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tkt="http://tktsvc.aots.att.com/ticket" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken>
+                <wsse:Username>Attnow</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">attnow0121</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:createTicketRequest>
+            <ns:createControlInput>
+                <tkt:RetrieveAssetInfo>D</tkt:RetrieveAssetInfo>
+                <tkt:AssetLookupType>BVOIP_RTR</tkt:AssetLookupType>
+            </ns:createControlInput>
+            <ch:WSHeader>
+                <ch:WSContext>
+                    <ch:FromAppId>NOWIA</ch:FromAppId>
+                    <ch:SourceIPAddress>ATTNOW</ch:SourceIPAddress>
+                </ch:WSContext>
+            </ch:WSHeader>
+            <ns:createTicketInput>
+                <tkt:Log>&quot;&quot;</tkt:Log>
+                <tkt:UserID>ATTNOW</tkt:UserID>
+                <tkt:ReportPhone>8772888363</tkt:ReportPhone>
+                <tkt:TroubleReptDescText>Circuit Down</tkt:TroubleReptDescText>
+                <tkt:ManagingOrg>MO-BGTN</tkt:ManagingOrg>
+                <tkt:ReporterEmailAddr/>
+                <tkt:KeyItemAffected>LKMRFLMFFW01-NODE1</tkt:KeyItemAffected>
+                <tkt:InternalLog>&quot;&quot;</tkt:InternalLog>
+                <tkt:ReportedBy>BVoIP VDNA</tkt:ReportedBy>
+                <tkt:Severity>6 - Other</tkt:Severity>
+                <tkt:ClientHelpdesk>ATTNOW</tkt:ClientHelpdesk>
+                <tkt:TicketRole>Main</tkt:TicketRole>
+                <tkt:TicketSource>ATTNOW</tkt:TicketSource>
+                <tkt:ProblemAbstract>SD- Aots-tm Ebond 1/3</tkt:ProblemAbstract>
+                <tkt:WorkQueue/>
+                <tkt:TicketType>E-Bonding</tkt:TicketType>
+                <tkt:ReptRequestType>Fault</tkt:ReptRequestType>
+                <tkt:ClientTicketNum>IMTASK0026560</tkt:ClientTicketNum>
+                <tkt:FunctionalArea>GLOBAL_AM</tkt:FunctionalArea>
+            </ns:createTicketInput>
+            <ns:assetInput>
+                <tkt:EndUserEmail/>
+                <tkt:ActiveOrg>MO-BGTN-VOIP</tkt:ActiveOrg>
+                <tkt:EndUserName/>
+                <tkt:AssetType>Equipment</tkt:AssetType>
+                <tkt:LocationID>UNKNOWN</tkt:LocationID>
+                <tkt:BvoipIndicator>Yes</tkt:BvoipIndicator>
+                <tkt:EndUserPhone/>
+                <tkt:ReptSvcLineDescText>BVOIP</tkt:ReptSvcLineDescText>
+                <tkt:AssetID>LKMRFLMFFW01-NODE1</tkt:AssetID>
+            </ns:assetInput>
+        </ns:createTicketRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
