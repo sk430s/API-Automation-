@@ -1,0 +1,30 @@
+<soapenv:Envelope xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+    <soapenv:Header> 
+       <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soapenv:mustUnderstand="1"> 
+          <wsse:UsernameToken> 
+             <wsse:Username>em</wsse:Username> 
+             <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">em=123</wsse:Password> 
+          </wsse:UsernameToken> 
+       </wsse:Security> 
+    </soapenv:Header> 
+    <soapenv:Body> 
+       <p620:getTicketRequest xmlns:p620="http://aots.att.com/ticket/v1"> 
+          <p882:WSHeader xmlns:p882="http://cio.att.com/commonheader/v3"> 
+             <p882:WSContext> 
+                <p882:FromAppId>EM</p882:FromAppId> 
+                <p882:SourceIPAddress>135.79.209.20</p882:SourceIPAddress> 
+             </p882:WSContext> 
+          </p882:WSHeader> 
+          <p620:getTicketInput> 
+          <p735:TicketNum xmlns:p735="http://tktsvc.aots.att.com/ticket">000000295998229</p735:TicketNum> 
+             
+             <p735:LogQualifier xmlns:p735="http://tktsvc.aots.att.com/ticket">2</p735:LogQualifier> 
+             <p735:LogSortOrder xmlns:p735="http://tktsvc.aots.att.com/ticket">D</p735:LogSortOrder> 
+             <p735:LogFilter xmlns:p735="http://tktsvc.aots.att.com/ticket"> 
+                 <p735:NumberOfRows xmlns:p735="http://tktsvc.aots.att.com/ticket">100</p735:NumberOfRows> 
+             </p735:LogFilter> 
+ 
+          </p620:getTicketInput> 
+       </p620:getTicketRequest> 
+    </soapenv:Body> 
+ </soapenv:Envelope>

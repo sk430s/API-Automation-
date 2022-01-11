@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="10" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RetryFailedTestSuite" duration-ms="25878" started-at="2022-01-06T10:14:44 EST" finished-at="2022-01-06T10:15:10 EST">
+    <groups>
+    </groups>
+    <test name="RetryMultipleFailedTestCases" duration-ms="25878" started-at="2022-01-06T10:14:44 EST" finished-at="2022-01-06T10:15:10 EST">
+      <class name="com.servicenow.SNAPIAutomation.EM_RTR">
+        <test-method status="PASS" signature="beforeTestClass()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="beforeTestClass" is-config="true" duration-ms="0" started-at="2022-01-06T10:14:53 EST" finished-at="2022-01-06T10:14:53 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestClass -->
+        <test-method status="PASS" signature="testEDF_TN_Request()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="testEDF_TN_Request" duration-ms="1723" started-at="2022-01-06T10:14:53 EST" description="EDF REST API EM_RTR_Nowia" finished-at="2022-01-06T10:14:55 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEDF_TN_Request -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:14:55 EST" finished-at="2022-01-06T10:14:55 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEDF_TN_Request status=SUCCESS method=EM_RTR.testEDF_TN_Request()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:14:56 EST" finished-at="2022-01-06T10:14:56 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketCase_EM_TN status=SKIP method=EM_RTR.testRESTTicketCase_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:14:58 EST" finished-at="2022-01-06T10:14:58 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketCase_EM_TN status=SKIP method=EM_RTR.testRESTTicketCase_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:14:59 EST" finished-at="2022-01-06T10:14:59 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketCase_EM_TN status=SKIP method=EM_RTR.testRESTTicketCase_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="testRESTTicketCase_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="testRESTTicketCase_EM_TN" duration-ms="961" started-at="2022-01-06T10:14:59 EST" description="Case Escalation EM_RTR_Nowia" finished-at="2022-01-06T10:15:00 EST">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[io.restassured.internal.path.xml.NodeChildrenImpl cannot be cast to java.lang.String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: io.restassured.internal.path.xml.NodeChildrenImpl cannot be cast to java.lang.String
+at com.servicenow.SNAPIAutomation.EM_RTR.testRESTTicketCase_EM_TN(EM_RTR.java:183)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRESTTicketCase_EM_TN -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:15:00 EST" finished-at="2022-01-06T10:15:00 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketCase_EM_TN status=FAILURE method=EM_RTR.testRESTTicketCase_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:15:00 EST" finished-at="2022-01-06T10:15:00 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketClose_EM_TN status=SKIP method=EM_RTR.testRESTTicketClose_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:15:01 EST" finished-at="2022-01-06T10:15:01 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketClose_EM_TN status=SKIP method=EM_RTR.testRESTTicketClose_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:15:02 EST" finished-at="2022-01-06T10:15:02 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketClose_EM_TN status=SKIP method=EM_RTR.testRESTTicketClose_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="testRESTTicketClose_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="testRESTTicketClose_EM_TN" duration-ms="611" started-at="2022-01-06T10:15:02 EST" description="Close REST API EM_RTR_Nowia
+" finished-at="2022-01-06T10:15:02 EST">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[io.restassured.internal.path.xml.NodeChildrenImpl cannot be cast to java.lang.String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: io.restassured.internal.path.xml.NodeChildrenImpl cannot be cast to java.lang.String
+at com.servicenow.SNAPIAutomation.EM_RTR.testRESTTicketClose_EM_TN(EM_RTR.java:202)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRESTTicketClose_EM_TN -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:15:02 EST" finished-at="2022-01-06T10:15:02 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketClose_EM_TN status=FAILURE method=EM_RTR.testRESTTicketClose_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRESTTicketCreate_EM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="testRESTTicketCreate_EM_RTR" duration-ms="3793" started-at="2022-01-06T10:15:02 EST" description="Create EM_RTR_Nowia
+" finished-at="2022-01-06T10:15:06 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRESTTicketCreate_EM_RTR -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:15:06 EST" finished-at="2022-01-06T10:15:06 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketCreate_EM_RTR status=SUCCESS method=EM_RTR.testRESTTicketCreate_EM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRESTTicketGet_EM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="testRESTTicketGet_EM_RTR" duration-ms="2232" started-at="2022-01-06T10:15:06 EST" description="Get EM_RTR_Nowia" finished-at="2022-01-06T10:15:08 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRESTTicketGet_EM_RTR -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:15:08 EST" finished-at="2022-01-06T10:15:08 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketGet_EM_RTR status=SUCCESS method=EM_RTR.testRESTTicketGet_EM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:15:09 EST" finished-at="2022-01-06T10:15:09 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketUpdate_EM_TN status=SKIP method=EM_RTR.testRESTTicketUpdate_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:15:09 EST" finished-at="2022-01-06T10:15:09 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketUpdate_EM_TN status=SKIP method=EM_RTR.testRESTTicketUpdate_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:15:10 EST" finished-at="2022-01-06T10:15:10 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketUpdate_EM_TN status=SKIP method=EM_RTR.testRESTTicketUpdate_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="testRESTTicketUpdate_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="testRESTTicketUpdate_EM_TN" duration-ms="415" started-at="2022-01-06T10:15:10 EST" description="Update Log REST API EM_RTR_Nowia" finished-at="2022-01-06T10:15:10 EST">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[io.restassured.internal.path.xml.NodeChildrenImpl cannot be cast to java.lang.String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: io.restassured.internal.path.xml.NodeChildrenImpl cannot be cast to java.lang.String
+at com.servicenow.SNAPIAutomation.EM_RTR.testRESTTicketUpdate_EM_TN(EM_RTR.java:160)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRESTTicketUpdate_EM_TN -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:15:10 EST" finished-at="2022-01-06T10:15:10 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRESTTicketUpdate_EM_TN status=FAILURE method=EM_RTR.testRESTTicketUpdate_EM_TN()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.servicenow.SNAPIAutomation.EM_RTR@4d3167f4]" name="flushReport" is-config="true" duration-ms="49" started-at="2022-01-06T10:15:10 EST" finished-at="2022-01-06T10:15:10 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.servicenow.SNAPIAutomation.EM_RTR -->
+      <class name="com.servicenow.SNAPIAutomation.AOTSTM_RTR">
+        <test-method status="PASS" signature="beforeTestClass()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="beforeTestClass" is-config="true" duration-ms="112" started-at="2022-01-06T10:14:44 EST" finished-at="2022-01-06T10:14:45 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestClass -->
+        <test-method status="PASS" signature="testCreateAOTSTM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="testCreateAOTSTM_RTR" duration-ms="3447" started-at="2022-01-06T10:14:45 EST" description="Create AOTS-TM_RTR
+" finished-at="2022-01-06T10:14:48 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAOTSTM_RTR -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="afterMethod" is-config="true" duration-ms="13" started-at="2022-01-06T10:14:48 EST" finished-at="2022-01-06T10:14:48 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateAOTSTM_RTR status=SUCCESS method=AOTSTM_RTR.testCreateAOTSTM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:14:49 EST" finished-at="2022-01-06T10:14:49 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClose_AOTSTM_RTR status=SKIP method=AOTSTM_RTR.testClose_AOTSTM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:14:50 EST" finished-at="2022-01-06T10:14:50 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClose_AOTSTM_RTR status=SKIP method=AOTSTM_RTR.testClose_AOTSTM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:14:50 EST" finished-at="2022-01-06T10:14:50 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClose_AOTSTM_RTR status=SKIP method=AOTSTM_RTR.testClose_AOTSTM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="testClose_AOTSTM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="testClose_AOTSTM_RTR" duration-ms="760" started-at="2022-01-06T10:14:50 EST" description="Close REST API AOTS-TM RTR
+" depends-on-methods="com.servicenow.SNAPIAutomation.AOTSTM_RTR.testCreateAOTSTM_RTR" finished-at="2022-01-06T10:14:51 EST">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[io.restassured.internal.path.xml.NodeChildrenImpl cannot be cast to java.lang.String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: io.restassured.internal.path.xml.NodeChildrenImpl cannot be cast to java.lang.String
+at com.servicenow.SNAPIAutomation.AOTSTM_RTR.testClose_AOTSTM_RTR(AOTSTM_RTR.java:129)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClose_AOTSTM_RTR -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:14:51 EST" finished-at="2022-01-06T10:14:51 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClose_AOTSTM_RTR status=FAILURE method=AOTSTM_RTR.testClose_AOTSTM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testGetAOTSTM_EM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="testGetAOTSTM_EM_RTR" duration-ms="687" started-at="2022-01-06T10:14:51 EST" description="Get AOTS-TM_RTR_Nowia" depends-on-methods="com.servicenow.SNAPIAutomation.AOTSTM_RTR.testCreateAOTSTM_RTR" finished-at="2022-01-06T10:14:52 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAOTSTM_EM_RTR -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-06T10:14:52 EST" finished-at="2022-01-06T10:14:52 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGetAOTSTM_EM_RTR status=SUCCESS method=AOTSTM_RTR.testGetAOTSTM_EM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testtUpdateAOTSTM_EM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="testtUpdateAOTSTM_EM_RTR" duration-ms="963" started-at="2022-01-06T10:14:52 EST" description="Update Log AOTS-TM_RTR_Nowia" depends-on-methods="com.servicenow.SNAPIAutomation.AOTSTM_RTR.testCreateAOTSTM_RTR" finished-at="2022-01-06T10:14:53 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtUpdateAOTSTM_EM_RTR -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-06T10:14:53 EST" finished-at="2022-01-06T10:14:53 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testtUpdateAOTSTM_EM_RTR status=SUCCESS method=AOTSTM_RTR.testtUpdateAOTSTM_EM_RTR()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.servicenow.SNAPIAutomation.AOTSTM_RTR@1e7c7811]" name="flushReport" is-config="true" duration-ms="211" started-at="2022-01-06T10:14:53 EST" finished-at="2022-01-06T10:14:53 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.servicenow.SNAPIAutomation.AOTSTM_RTR -->
+    </test> <!-- RetryMultipleFailedTestCases -->
+  </suite> <!-- RetryFailedTestSuite -->
+</testng-results>

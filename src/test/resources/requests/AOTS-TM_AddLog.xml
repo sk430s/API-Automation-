@@ -1,0 +1,33 @@
+<soapenv:Envelope soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ch="http://cio.att.com/commonheader/v3" xmlns:ns="http://aots.att.com/ticket/v1" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tkt="http://tktsvc.aots.att.com/ticket" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken>
+                <wsse:Username>Attnow</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">attnow0121</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:updateTicketRequest>
+            <ns:updateControlInput>
+                <tkt:TicketNum>000000295994818</tkt:TicketNum>
+                <tkt:LockForUpdate>false</tkt:LockForUpdate>
+            </ns:updateControlInput>
+            <ch:WSHeader>
+                <ch:WSContext>
+                    <ch:FromAppId>NOWIA</ch:FromAppId>
+                    <ch:SourceIPAddress>ATTNOW</ch:SourceIPAddress>
+                </ch:WSContext>
+            </ch:WSHeader>
+            <ns:updateTicketInput>
+                <tkt:Log/>
+                <tkt:UserID>ATTNOW</tkt:UserID>
+                <tkt:ClientHelpdesk>ATTNOW</tkt:ClientHelpdesk>
+                <tkt:ProblemAbstract>SD- Aots-tm Ebond 1/3</tkt:ProblemAbstract>
+                <tkt:TicketState>Active</tkt:TicketState>
+                <tkt:InternalLog>Add logs Sn-Aotstm</tkt:InternalLog>
+                <tkt:Severity>6 - Other</tkt:Severity>
+            </ns:updateTicketInput>
+        </ns:updateTicketRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

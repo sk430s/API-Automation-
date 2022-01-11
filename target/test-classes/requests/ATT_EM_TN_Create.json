@@ -1,0 +1,21 @@
+{
+    "short_description": "Test Ticket creation",
+    "contact_type": "web",
+    "is_test_authorized": "no",
+    "power_to_cpe": "yes",
+    "is_dispatch_authorized": "no",
+    "contact": "nj5695@exo.att.com",
+    "priority": "4",
+    "category": "Informational",
+    "contactfirstname": "NEENA",
+    "contactlastname": "JETHANI",
+    "contact_phone": "7324200703",
+    "reported_trouble": "Informational",
+    "primary_site_contact_name": "Mohit Chawla",
+    "primary_site_contact_phone": "9082348256",
+    "primary_site_contact_email": "fsinkovits@att.com",
+    "site_access_hours": "{\"listofaccesshour\":[{\"day_of_week\":\"MON\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"TUE\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"WED\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"THU\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"FRI\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"SAT\",\"start\":\"08:00\",\"end\":\"17:00\"},{\"day_of_week\":\"SUN\",\"start\":\"08:00\",\"end\":\"17:00\"}]}",
+    "reported_item": "+17323683808",
+    "reported_type": "Telephone Number",
+    "callingsystem": "NOWIA"
+}
