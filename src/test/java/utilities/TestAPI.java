@@ -28,18 +28,6 @@ public class TestAPI extends BaseAPISpecs {
 		config = Hooks.config_prop;
 	}
 	
-/*	@Test
-	public void test1() throws IOException  {
-		
-		RestAPI restAPI = new RestAPI();
-		String fileName = "createTicket.json";
-		String EndPoint = config.getProperty("baseUrl")+config.getProperty("createTicket");
-		Response response = restAPI.postRestAPI(EndPoint,fileName);
-        String jsonString = response.asString();
-        int ID = JsonPath.from(jsonString).get("ticket.id");
-        System.out.println("ID is : "+ID);
-	}
-*/
 	@Test
 	public void test2() throws IOException  {
 		

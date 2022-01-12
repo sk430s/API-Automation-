@@ -12,8 +12,8 @@ public class BaseAPISpecs {
 	
 	public RequestSpecification givenBaseSpec() { 
 		Map<String, String> headers = new HashMap<String, String>();
-//		Map<String, String> body = new HashMap<>(); 
-				return RestAssured.given() 
+//		Map<String, String> headers = new HashMap<>(); 
+				return RestAssured.given().log().all()
 							.relaxedHTTPSValidation() 
 							.accept(ContentType.JSON) 
 							.contentType(ContentType.JSON) 

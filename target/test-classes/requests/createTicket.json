@@ -1,7 +1,0 @@
-{
-  "ticket": {
-    "subject":  "Test Ticket 25",
-    "comment":  { "body": "This is a different ticket." },
-    "priority": "urgent"
-  }
-}

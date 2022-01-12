@@ -24,7 +24,7 @@ public class RestAPI extends BaseAPISpecs {
 		return response;
 	}
 	
-public Response postRestAPIRequestBody(String endpoint, String body) throws IOException {
+public Response postRestAPIwithStringBody(String endpoint, String body) throws IOException {
 		
 		RestAssured.baseURI = endpoint;
         Response response = null;
@@ -46,17 +46,17 @@ public Response postRestAPIRequestBody(String endpoint, String body) throws IOEx
 		return response;
 	}
 	
-public Response postSOAPAPIRequestBody(String endpoint, String body) throws IOException {
+	
+public Response postSOAPAPIwithString(String endpoint, String body) throws IOException {
 		
 		RestAssured.baseURI = endpoint;
         Response response = null;
-    //    String xmlrequest = CommonUtils.readFile(FileName);
+        //String xmlrequest = CommonUtils.readFile(FileName);
 		RequestSpecification request = givenSOAPBaseSpec().body(body);
         response = request.post();
 		
 		return response;
 	}
-	
 	public Response getRestAPI(String endpoint) {
         RestAssured.baseURI = endpoint;
         RequestSpecification httpRequest = givenBaseSpec();

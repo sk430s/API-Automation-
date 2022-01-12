@@ -32,7 +32,6 @@ public class BaseTestSpecs {
 		Hooks.initialize();
 		config = Hooks.config_prop;
 		rpt= extentReports.getInstance(System.getProperty("user.dir")+config.getProperty("reportPath"));
-	//	System.out.println("report" +rpt);
 	}
 	
 	@AfterMethod

@@ -11,6 +11,7 @@
 		<classes>
 			<class name="com.servicenow.SNAPIAutomation.AOTSTM_RTR"/>
 			<class name="com.servicenow.SNAPIAutomation.EM_RTR"/>
+			<class name="com.servicenow.SNAPIAutomation.TestData"/>
 		</classes>
  </test>
 </suite>

@@ -1,16 +1,16 @@
 package com.servicenow.SNAPIAutomation;
-
+import utilities.RestAPI;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
 
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
-import utilities.RestAPI;
 
-	public class TestSoapApi extends BaseTestSpecs {
 
-	@Test(description = "Test REST API", enabled=false)
+public class TestSoapApi extends BaseTestSpecs {
+	
+	@Test(description = "Test SOAP API", enabled=false)
 	public void testSOAPTicketCreate() throws IOException {
 
 		RestAPI restAPI = new RestAPI();
@@ -37,15 +37,15 @@ import utilities.RestAPI;
 
 		System.out.println("ID is : " + ID);
 	}
-
-
-	@Test(description = "Test REST API EM", enabled=false)
-	public void testRESTTicketCreate_EM() throws IOException {
+	
+	
+	@Test(description = "Test SOAP API EM")
+	public void testSOAPTicketCreate_EM() throws IOException {
 
 		RestAPI restAPI = new RestAPI();
 		String fileName = "EM_Create_ticket.xml";
 		String EndPoint = config.getProperty("createEMTicket");
-		Response response = restAPI.postRestAPI(EndPoint, fileName);
+		Response response = restAPI.postSOAPAPI(EndPoint, fileName);
 		String jsonString = response.asString();
 		System.out.println(jsonString);
 		System.out.println(response.getStatusCode());
@@ -68,13 +68,15 @@ import utilities.RestAPI;
 	}
 
 	
-	@Test(description = "Test REST API ET")
-	public void testTickRESTetCreate_ET() throws IOException {
+	
+	@Test(description = "Test SOAP API ET")
+	public void testSOAPTicketCreate_ET() throws IOException {
 
 		RestAPI restAPI = new RestAPI();
 		String fileName = "ET_Create_ticket.xml";
 		String EndPoint = config.getProperty("createEMTicket");
 		Response response = restAPI.postRestAPI(EndPoint, fileName);
+		Response response = restAPI.postSOAPAPI(EndPoint, fileName);
 		String jsonString = response.asString();
 		System.out.println(jsonString);
 		System.out.println(response.getStatusCode());

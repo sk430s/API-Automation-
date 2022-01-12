@@ -55,11 +55,11 @@
                 <ns2:ValidationResponsesRcvd>Yes</ns2:ValidationResponsesRcvd>
             </ns3:createTicketInput>
             <ns3:assetInput>
-                <ns2:AssetID>4082256502</ns2:AssetID>
+                <ns2:AssetID>US2918SDOCA89R</ns2:AssetID>
                 <ns2:ClientName>AT&amp;T BVOIP Customer D</ns2:ClientName>
-                <ns2:OrgGroup>CG8757</ns2:OrgGroup>
-                <ns2:GRC>DNC</ns2:GRC>
-                <ns2:MCN>CG8757</ns2:MCN>
+                <ns2:OrgGroup>SK7773</ns2:OrgGroup>
+                <ns2:GRC>DNA</ns2:GRC>
+                <ns2:MCN>SL1533</ns2:MCN>
                 <ns2:CircuitID>7323683817</ns2:CircuitID>
                 <ns2:CountryCode>USA</ns2:CountryCode>
                 <ns2:CallbackContact></ns2:CallbackContact>
@@ -116,7 +116,7 @@
                         <ns2:LocationDetailsType>L</ns2:LocationDetailsType>
                     </ns2:LocationDetailsInfo>
                 </ns2:LocationDetailsInfoList>
-                <ns2:SOC>HL</ns2:SOC>
+                <ns2:SOC>1J</ns2:SOC>
                 <ns2:BvoipProbeIndicator>N</ns2:BvoipProbeIndicator>
                 <ns2:GDBAssetObjectID>84773296</ns2:GDBAssetObjectID>
                 <ns2:GDBContactObjectID>0</ns2:GDBContactObjectID>
@@ -124,7 +124,7 @@
                 <ns2:ResellerIndicator>N</ns2:ResellerIndicator>
             </ns3:assetInput>
             <ns3:createControlInput>
-                <ns2:AssetLookupType>BVOIP_TN</ns2:AssetLookupType>
+                <ns2:AssetLookupType>BVOIP_RTR</ns2:AssetLookupType>
                 <ns2:CreateType>U</ns2:CreateType>
                 <ns2:RetrieveAssetInfo>R</ns2:RetrieveAssetInfo>
             </ns3:createControlInput>

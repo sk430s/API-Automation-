@@ -137,6 +137,77 @@ public String createRequestBody(String ticketNum) {
 				+ "        </ns3:createTicketRequest>\r\n"
 				+ "    </soap:Body>\r\n"
 				+ "</soap:Envelope>";
+	public String updateRequestBody(String ticketNum) {
+		
+		return "<?xml version='1.0' encoding='utf-8'?>\r\n"
+				+ "<soap-env:Envelope xmlns:soap-env=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n"
+				+ "    <soap-env:Header>\r\n"
+				+ "        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\">\r\n"
+				+ "            <wsse:UsernameToken>\r\n"
+				+ "                <wsse:Username>expresst</wsse:Username>\r\n"
+				+ "                <wsse:Password Type=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText\">etkt0813</wsse:Password>\r\n"
+				+ "            </wsse:UsernameToken>\r\n"
+				+ "        </wsse:Security>\r\n"
+				+ "    </soap-env:Header>\r\n"
+				+ "    <soap-env:Body>\r\n"
+				+ "        <ns0:updateTicketRequest xmlns:ns0=\"http://aots.att.com/ticket/v1\">\r\n"
+				+ "            <ns1:WSHeader xmlns:ns1=\"http://cio.att.com/commonheader/v3\">\r\n"
+				+ "                <ns1:WSContext>\r\n"
+				+ "                    <ns1:FromAppId>ETT_aotsUpdateLog</ns1:FromAppId>\r\n"
+				+ "                    <ns1:SourceIPAddress>express-ticketing-84d5594bc7-wvckz</ns1:SourceIPAddress>\r\n"
+				+ "                </ns1:WSContext>\r\n"
+				+ "            </ns1:WSHeader>\r\n"
+				+ "            <ns0:updateTicketInput>\r\n"
+				+ "                <ns2:Log xmlns:ns2=\"http://tktsvc.aots.att.com/ticket\">====================\r\n"
+				+ "= Customer Comment =\r\n"
+				+ "====================\r\n"
+				+ "\r\n"
+				+ "REPORTED BY: \r\n"
+				+ " Mohit Chawla 3149717000 mc9844@att.com\r\n"
+				+ "\r\n"
+				+ "EXPRESS TICKETING CUSTOMER STATES: \r\n"
+				+ "\r\n"
+				+ "REPORT DETAIL: Ticket only, Do not cancel, close ticket\r\n"
+				+ "\r\n"
+				+ "REPORT DESCRIPTION: Test ticket\r\n"
+				+ "\r\n"
+				+ "==========================================\r\n"
+				+ "======   Test/Dispatch/LCON Template =====\r\n"
+				+ "==========================================\r\n"
+				+ "TESTING AUTH: Yes\r\n"
+				+ "DISPATCH AUTH: No\r\n"
+				+ "CPE POWER: Y \r\n"
+				+ "\r\n"
+				+ "PRIMARY LCON NAME: Mohit Chawla\r\n"
+				+ "PRIMARY LCON PHONE: 3149717000\r\n"
+				+ "Premise Access Hours:\r\n"
+				+ "Mon     :     08:00  TO  17:00\r\n"
+				+ "Tue     :     08:00  TO  17:00\r\n"
+				+ "Wed     :     08:00  TO  17:00\r\n"
+				+ "Thu     :     08:00  TO  17:00\r\n"
+				+ "Fri     :     08:00  TO  17:00\r\n"
+				+ "Sat     :     Closed  TO  Closed\r\n"
+				+ "Sun     :     Closed  TO  Closed\r\n"
+				+ "============================================\r\n"
+				+ "======   Test/Dispatch/LCON Template   =====\r\n"
+				+ "============================================\r\n"
+				+ "</ns2:Log>\r\n"
+				+ "                <ns3:InternalLog xmlns:ns3=\"http://tktsvc.aots.att.com/ticket\"></ns3:InternalLog>\r\n"
+				+ "                <ns4:LogUserID xmlns:ns4=\"http://tktsvc.aots.att.com/ticket\">ETT</ns4:LogUserID>\r\n"
+				+ "                <ns5:LogUserName xmlns:ns5=\"http://tktsvc.aots.att.com/ticket\">Express Ticketing</ns5:LogUserName>\r\n"
+				+ "                <ns6:SecondaryActivityTypeCode xmlns:ns6=\"http://tktsvc.aots.att.com/ticket\">99</ns6:SecondaryActivityTypeCode>\r\n"
+				+ "                <ns7:ReferralAction xmlns:ns7=\"http://tktsvc.aots.att.com/ticket\">CustomerMessage</ns7:ReferralAction>\r\n"
+				+ "                <ns8:TicketSpecialNotice xmlns:ns8=\"http://tktsvc.aots.att.com/ticket\">This is an online ticket created by the Customer in Express Ticketing</ns8:TicketSpecialNotice>\r\n"
+				+ "                <ns9:UserID xmlns:ns9=\"http://tktsvc.aots.att.com/ticket\">ETT</ns9:UserID>\r\n"
+				+ "            </ns0:updateTicketInput>\r\n"
+				+ "            <ns0:updateControlInput>\r\n"
+				+ "                <ns10:FunctionalArea xmlns:ns10=\"http://tktsvc.aots.att.com/ticket\">GLOBAL_AM</ns10:FunctionalArea>\r\n"
+				+ "                <ns11:TicketNum xmlns:ns11=\"http://tktsvc.aots.att.com/ticket\">"+ticketNum+"</ns11:TicketNum>\r\n"
+				+ "                <ns12:LockForUpdate xmlns:ns12=\"http://tktsvc.aots.att.com/ticket\">false</ns12:LockForUpdate>\r\n"
+				+ "            </ns0:updateControlInput>\r\n"
+				+ "        </ns0:updateTicketRequest>\r\n"
+				+ "    </soap-env:Body>\r\n"
+				+ "</soap-env:Envelope>";
 
 		
 		
@@ -211,8 +282,6 @@ public String createRequestBody(String ticketNum) {
 				+ "		        </ns0:getTicketRequest>\r\n"
 				+ "		    </soap-env:Body>\r\n"
 				+ "		</soap-env:Envelope>";
-		
-	
 	}
 	
 /*	public String closeRequestBody(String ticketNum) {
@@ -264,4 +333,80 @@ public String createRequestBody(String ticketNum) {
 */
 
 
+	
+	
+	public String telePhoneNumRequestBody(String phoneNumber) {
+		return "{\r\n"
+				+ "    \"short_description\": \"Test Ticket creation\",\r\n"
+				+ "    \"contact_type\": \"web\",\r\n"
+				+ "    \"is_test_authorized\": \"no\",\r\n"
+				+ "    \"power_to_cpe\": \"yes\",\r\n"
+				+ "    \"is_dispatch_authorized\": \"no\",\r\n"
+				+ "    \"contact\": \"nj5695@exo.att.com\",\r\n"
+				+ "    \"priority\": \"4\",\r\n"
+				+ "    \"category\": \"Informational\",\r\n"
+				+ "    \"contactfirstname\": \"NEENA\",\r\n"
+				+ "    \"contactlastname\": \"JETHANI\",\r\n"
+				+ "    \"contact_phone\": \"7324200703\",\r\n"
+				+ "    \"reported_trouble\": \"Informational\",\r\n"
+				+ "    \"primary_site_contact_name\": \"Mohit Chawla\",\r\n"
+				+ "    \"primary_site_contact_phone\": \"9082348256\",\r\n"
+				+ "    \"primary_site_contact_email\": \"fsinkovits@att.com\",\r\n"
+				+ "    \"site_access_hours\": \"{\\\"listofaccesshour\\\":[{\\\"day_of_week\\\":\\\"MON\\\",\\\"start\\\":\\\"08:00\\\",\\\"end\\\":\\\"17:00\\\"},{\\\"day_of_week\\\":\\\"TUE\\\",\\\"start\\\":\\\"08:00\\\",\\\"end\\\":\\\"17:00\\\"},{\\\"day_of_week\\\":\\\"WED\\\",\\\"start\\\":\\\"08:00\\\",\\\"end\\\":\\\"17:00\\\"},{\\\"day_of_week\\\":\\\"THU\\\",\\\"start\\\":\\\"08:00\\\",\\\"end\\\":\\\"17:00\\\"},{\\\"day_of_week\\\":\\\"FRI\\\",\\\"start\\\":\\\"08:00\\\",\\\"end\\\":\\\"17:00\\\"},{\\\"day_of_week\\\":\\\"SAT\\\",\\\"start\\\":\\\"08:00\\\",\\\"end\\\":\\\"17:00\\\"},{\\\"day_of_week\\\":\\\"SUN\\\",\\\"start\\\":\\\"08:00\\\",\\\"end\\\":\\\"17:00\\\"}]}\",\r\n"
+				+ "    \"reported_item\": \"+"+phoneNumber+"\",\r\n"
+				+ "    \"reported_type\": \"Telephone Number\",\r\n"
+				+ "    \"callingsystem\": \"NOWIA\"\r\n"
+				+ "}";
+		
+	}
+	
+	public String logUpdateRequestBody(String caseNumber,String phoneNumber) {
+		return"{\r\n"
+				+ "    \"comments\": \"Adding new notes from EM to ATTNOW\",\r\n"
+				+ "    \"contact\": \"nj5695@exo.att.com\",\r\n"
+				+ "    \"priority\": \"4\",\r\n"
+				+ "    \"case_number\": \""+caseNumber+"\",\r\n"
+				+ "    \"contactfirstname\": \"NEENA\",\r\n"
+				+ "    \"contactlastname\": \"JETHANI\",\r\n"
+				+ "    \"contact_phone\": \""+phoneNumber+"\",\r\n"
+				+ "    \"follow_up\": \"2021-11-29 15:57:12\",\r\n"
+				+ "    \"callingsystem\": \"NOWIA\"\r\n"
+				+ "}";
+	}
+	
+	
+	public String caseEscalationRequestBody(String caseNumber,String phoneNumber) {
+		return"{\r\n"
+				+ "  \"comments\" : \"*****Customer Requests Escalation of Ticket *****\\nEscalation Level: 1\\nEscalation DeadLine: Monday, 29 Nov 2021 16:32:08 UTC\\nEscalating a case from EM\",\r\n"
+				+ "  \"contact\" : \"nj5695@exo.att.com\",\r\n"
+				+ "  \"priority\" : \"4\",\r\n"
+				+ "  \"case_number\" : \""+caseNumber+"\",\r\n"
+				+ "  \"contactfirstname\" : \"NEENA\",\r\n"
+				+ "  \"contactlastname\" : \"JETHANI\",\r\n"
+				+ "  \"contact_phone\" : \""+phoneNumber+"\",\r\n"
+				+ "  \"follow_up\" : \"2021-11-29 15:32:08\",\r\n"
+				+ "  \"callingsystem\" : \"NOWIA\"\r\n"
+				+ "}";
+	}
+	
+
+	public String caseClosureRequestBody(String caseNumber,String phoneNumber) {
+		return"{\r\n"
+				+ "    \"comments\": \"\\\"Important : The Customer requested to close this ticket. Please review whether there is an associated ticket or not. If not, close this ticket.\\\"Closing the case from EM - 11292021\",\r\n"
+				+ "    \"contact\": \"nj5695@exo.att.com\",\r\n"
+				+ "    \"priority\": \"4\",\r\n"
+				+ "    \"case_number\": \""+caseNumber+"\",\r\n"
+				+ "    \"contactfirstname\": \"NEENA\",\r\n"
+				+ "    \"contactlastname\": \"JETHANI\",\r\n"
+				+ "    \"contact_phone\": \""+phoneNumber+"\",\r\n"
+				+ "    \"follow_up\": \"2021-11-29 16:08:39\",\r\n"
+				+ "    \"callingsystem\": \"NOWIA\"\r\n"
+				+ "}";
+	}
+	
+	
+	
 }
+
+
+>>>>>>> b36de3bcd5afa45689680ae5904bf8a888cc530d
