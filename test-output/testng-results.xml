@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7348" started-at="2022-01-12T12:17:38 EST" finished-at="2022-01-12T12:17:45 EST">
+  <suite name="Default suite" duration-ms="7376" started-at="2022-01-12T12:39:42 EST" finished-at="2022-01-12T12:39:50 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7348" started-at="2022-01-12T12:17:38 EST" finished-at="2022-01-12T12:17:45 EST">
+    <test name="Default test" duration-ms="7376" started-at="2022-01-12T12:39:42 EST" finished-at="2022-01-12T12:39:50 EST">
       <class name="com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW">
-        <test-method status="PASS" signature="beforeTestClass()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="beforeTestClass" is-config="true" duration-ms="241" started-at="2022-01-12T12:17:38 EST" finished-at="2022-01-12T12:17:38 EST">
+        <test-method status="PASS" signature="beforeTestClass()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="beforeTestClass" is-config="true" duration-ms="236" started-at="2022-01-12T12:39:43 EST" finished-at="2022-01-12T12:39:43 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestClass -->
-        <test-method status="PASS" signature="createRouterTicket()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="createRouterTicket" duration-ms="6500" started-at="2022-01-12T12:17:38 EST" description="Create Router Ticket" finished-at="2022-01-12T12:17:45 EST">
+        <test-method status="PASS" signature="createRouterTicket()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="createRouterTicket" duration-ms="6469" started-at="2022-01-12T12:39:43 EST" description="Create Router Ticket" finished-at="2022-01-12T12:39:49 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createRouterTicket -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="afterMethod" is-config="true" duration-ms="20" started-at="2022-01-12T12:17:45 EST" finished-at="2022-01-12T12:17:45 EST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="afterMethod" is-config="true" duration-ms="25" started-at="2022-01-12T12:39:49 EST" finished-at="2022-01-12T12:39:49 EST">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="flushReport" is-config="true" duration-ms="524" started-at="2022-01-12T12:17:45 EST" finished-at="2022-01-12T12:17:45 EST">
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="flushReport" is-config="true" duration-ms="575" started-at="2022-01-12T12:39:49 EST" finished-at="2022-01-12T12:39:50 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
