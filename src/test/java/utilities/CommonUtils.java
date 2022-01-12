@@ -13,6 +13,7 @@ public class CommonUtils {
 	public static String readFile(String FileName) throws IOException {
 		
 		String fileName = requestPath+FileName;
+		System.out.println(fileName);
 		String content = new String(Files.readAllBytes(Paths.get(fileName)));
 		return content;
 		

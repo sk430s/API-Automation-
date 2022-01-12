@@ -137,6 +137,7 @@ public String createRequestBody(String ticketNum) {
 				+ "        </ns3:createTicketRequest>\r\n"
 				+ "    </soap:Body>\r\n"
 				+ "</soap:Envelope>";
+}
 	public String updateRequestBody(String ticketNum) {
 		
 		return "<?xml version='1.0' encoding='utf-8'?>\r\n"
@@ -284,7 +285,7 @@ public String createRequestBody(String ticketNum) {
 				+ "		</soap-env:Envelope>";
 	}
 	
-/*	public String closeRequestBody(String ticketNum) {
+	public String closeRequestBody(String ticketNum) {
 		return "<?xml version='1.0' encoding='utf-8'?>\r\n"
 				+ "<soap-env:Envelope xmlns:soap-env=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n"
 				+ "    <soap-env:Header>\r\n"
@@ -330,7 +331,7 @@ public String createRequestBody(String ticketNum) {
 				+ "</soap-env:Envelope>";
 
 }
-*/
+
 
 
 	
@@ -409,4 +410,3 @@ public String createRequestBody(String ticketNum) {
 }
 
 
->>>>>>> b36de3bcd5afa45689680ae5904bf8a888cc530d

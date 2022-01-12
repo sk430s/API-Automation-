@@ -13,11 +13,11 @@ import utilities.RestAPI;
 public class TestCreate extends BaseTestSpecs {
 	
 	
-	@Test
+	@Test(description = "Test REST API EM")
 		public void testRESTTicketCreate_EM() throws IOException {
 
 		RestAPI restAPI = new RestAPI();
-		Assert.assertEquals(false,true);
+		//Assert.assertEquals(false,true);
 		String fileName = "EM_Create_ticket.xml";
 		String EndPoint = config.getProperty("createEMTicket");
 		Response response = restAPI.postRestAPI(EndPoint, fileName);

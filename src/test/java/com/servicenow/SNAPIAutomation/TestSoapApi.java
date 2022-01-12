@@ -45,6 +45,7 @@ public class TestSoapApi extends BaseTestSpecs {
 		RestAPI restAPI = new RestAPI();
 		String fileName = "EM_Create_ticket.xml";
 		String EndPoint = config.getProperty("createEMTicket");
+		System.out.println("Endpoint"+EndPoint);
 		Response response = restAPI.postSOAPAPI(EndPoint, fileName);
 		String jsonString = response.asString();
 		System.out.println(jsonString);
@@ -76,7 +77,7 @@ public class TestSoapApi extends BaseTestSpecs {
 		String fileName = "ET_Create_ticket.xml";
 		String EndPoint = config.getProperty("createEMTicket");
 		Response response = restAPI.postRestAPI(EndPoint, fileName);
-		Response response = restAPI.postSOAPAPI(EndPoint, fileName);
+		//Response response = restAPI.postSOAPAPI(EndPoint, fileName);
 		String jsonString = response.asString();
 		System.out.println(jsonString);
 		System.out.println(response.getStatusCode());

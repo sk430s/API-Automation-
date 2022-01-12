@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7348" started-at="2022-01-12T12:17:38 EST" finished-at="2022-01-12T12:17:45 EST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7348" started-at="2022-01-12T12:17:38 EST" finished-at="2022-01-12T12:17:45 EST">
+      <class name="com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW">
+        <test-method status="PASS" signature="beforeTestClass()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="beforeTestClass" is-config="true" duration-ms="241" started-at="2022-01-12T12:17:38 EST" finished-at="2022-01-12T12:17:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestClass -->
+        <test-method status="PASS" signature="createRouterTicket()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="createRouterTicket" duration-ms="6500" started-at="2022-01-12T12:17:38 EST" description="Create Router Ticket" finished-at="2022-01-12T12:17:45 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRouterTicket -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="afterMethod" is-config="true" duration-ms="20" started-at="2022-01-12T12:17:45 EST" finished-at="2022-01-12T12:17:45 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createRouterTicket status=SUCCESS method=RouterScenariosEM_ATTNOW.createRouterTicket()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW@1a3869f4]" name="flushReport" is-config="true" duration-ms="524" started-at="2022-01-12T12:17:45 EST" finished-at="2022-01-12T12:17:45 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.servicenow.SNAPIAutomation.RouterScenariosEM_ATTNOW -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

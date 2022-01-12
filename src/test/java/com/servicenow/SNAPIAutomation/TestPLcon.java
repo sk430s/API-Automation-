@@ -37,7 +37,7 @@ public class TestPLcon  extends BaseTestSpecs{
 		  restAPI = new RestAPI(); 
 		  String fileName =req.createRequestBody(phoneNumber); 
 		  String EndPoint = config.getProperty("createTNTicket"); 
-		  Response response =restAPI.postRestAPIRequestBody(EndPoint, fileName); 
+		  Response response =restAPI.postRestAPIwithStringBody(EndPoint, fileName); 
 		  String jsonString =response.asString(); 
 		  System.out.println(response.getStatusCode());
 			XmlPath jsXpath = new XmlPath(response.asString());// Converting string into xml path to assert

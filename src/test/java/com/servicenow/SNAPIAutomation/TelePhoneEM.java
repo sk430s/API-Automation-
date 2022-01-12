@@ -2,6 +2,7 @@ package com.servicenow.SNAPIAutomation;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -10,7 +11,7 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
-import junit.framework.Assert;
+
 import utilities.RestAPI;
 
 public class TelePhoneEM extends BaseTestSpecs {
