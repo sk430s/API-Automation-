@@ -22,7 +22,7 @@ public class AOTSTM_RTR extends BaseTestSpecs{
 		RestAPI restAPI = new RestAPI();
 		String fileName = req.AotstmCreateRTR(caseNumber);
 		String EndPoint = config.getProperty("createAOTSTMTicket");
-		 Response response =restAPI.postRestAPIRequestBody(EndPoint, fileName); 
+		 Response response =restAPI.postRestAPIwithStringBody(EndPoint, fileName); 
 		// String jsonString =response.asString(); 
 	//	 System.out.println(jsonString);
 			System.out.println(response.getStatusCode());
@@ -47,7 +47,7 @@ public class AOTSTM_RTR extends BaseTestSpecs{
 		RestAPI restAPI = new RestAPI();
 		String fileName = req.AotstmUpdateRTR(caseNumber);
 		String EndPoint = config.getProperty("createAOTSTMTicket");
-		Response response = restAPI.postRestAPIRequestBody(EndPoint, fileName);
+		Response response = restAPI.postRestAPIwithStringBody(EndPoint, fileName);
 	//	String jsonString = response.asString();
 //		System.out.println(jsonString);
 		System.out.println(response.getStatusCode());
@@ -76,7 +76,7 @@ public class AOTSTM_RTR extends BaseTestSpecs{
 		RestAPI restAPI = new RestAPI();
 		String fileName = req.AotstmGetRTR(caseNumber);;
 		String EndPoint = config.getProperty("createAOTSTMTicket");
-		Response response = restAPI.postRestAPIRequestBody(EndPoint, fileName);
+		Response response = restAPI.postRestAPIwithStringBody(EndPoint, fileName);
 		System.out.println(response.getStatusCode());
 		XmlPath jsXpath = new XmlPath(response.asString());// Converting string into xml path to assert
 		System.out.println(jsXpath.getNodeChildren("Envelope.Body.getTicketResponse.getTicketOutput").size());
@@ -121,7 +121,7 @@ public class AOTSTM_RTR extends BaseTestSpecs{
 		RestAPI restAPI = new RestAPI();
 		String fileName = req.AotstmCloseRTR(caseNumber);
 		String EndPoint = config.getProperty("createAOTSTMTicket");
-		Response response = restAPI.postRestAPIRequestBody(EndPoint, fileName);
+		Response response = restAPI.postRestAPIwithStringBody(EndPoint, fileName);
 		System.out.println(response.getStatusCode());
 		XmlPath jsXpath = new XmlPath(response.asString());
 		System.out.println(
