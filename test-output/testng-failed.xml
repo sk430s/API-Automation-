@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.servicenow.SNAPIAutomation.TestSoapApi">
+      <class name="com.servicenow.SNAPIAutomation.EM_RTR">
         <methods>
+          <include name="testRESTTicketCreate_EM_RTR"/>
           <include name="afterMethod"/>
           <include name="flushReport"/>
           <include name="beforeTestClass"/>
-          <include name="testSOAPTicketCreate_EM"/>
         </methods>
-      </class> <!-- com.servicenow.SNAPIAutomation.TestSoapApi -->
+      </class> <!-- com.servicenow.SNAPIAutomation.EM_RTR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

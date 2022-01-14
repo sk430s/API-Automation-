@@ -2,6 +2,7 @@ package com.servicenow.SNAPIAutomation;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -23,6 +24,7 @@ public class CreateTicket extends BaseTestSpecs {
 		Response response = restAPI.postSOAPAPI(EndPoint, fileName);
 		String jsonString = response.asString();
 		System.out.println(response.getStatusCode());
+	//	logger.info("hello");
 		XmlPath jsXpath = new XmlPath(response.asString());// Converting string into xml path to assert
 		System.out.println(jsXpath.getNodeChildren("Envelope.Body.createTicketResponse.createTicketOutput").size());
 		Assert.assertEquals(jsXpath.getNodeChildren("Envelope.Body.createTicketResponse.createTicketOutput").size(),1);

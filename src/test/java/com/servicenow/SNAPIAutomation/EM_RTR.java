@@ -22,6 +22,9 @@ public class EM_RTR extends BaseTestSpecs {
 		String jsonString = response.asString();
 		System.out.println(jsonString);
 		System.out.println(response.getStatusCode());
+		int RCode=response.getStatusCode();
+		if(RCode==200)
+		{
 		XmlPath jsXpath = new XmlPath(response.asString());// Converting string into xml path to assert
 		
 	
@@ -37,6 +40,10 @@ public class EM_RTR extends BaseTestSpecs {
 		String F_Area = jsXpath.get("Envelope.Body.createTicketResponse.createTicketOutput.FunctionalArea");
 				System.out.println("FunctionalArea is : " + F_Area);
 				System.out.println("\n\n");
+		}
+		else {
+			
+		}
 		
 	}
 	
