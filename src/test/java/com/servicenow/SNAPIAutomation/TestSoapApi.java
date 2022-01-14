@@ -1,7 +1,10 @@
 package com.servicenow.SNAPIAutomation;
+import utilities.CommonUtils;
 import utilities.RestAPI;
 import java.io.IOException;
+import java.util.Map;
 
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
 import io.restassured.path.xml.XmlPath;
@@ -97,6 +100,35 @@ public class TestSoapApi extends BaseTestSpecs {
 		// String ID = XmlPath.("troubleTicketID");
 
 		System.out.println("ET ID is : " + ID);
+	}
+	
+	
+	@Test(description = "JSON Update")
+	public void json_create_request(ITestContext context) throws IOException {
+//		RestAPI restAPI = new RestAPI();
+		String fileName = "createCase.json";
+//		String EndPoint = config.getProperty("createEMTicket");
+
+		String jsonrequest = CommonUtils.readFile(fileName);
+		
+		context.setAttribute("jsonrequest", jsonrequest);
+		String jsonrequest1 = (String) context.getAttribute("jsonrequest");
+
+		String valuestobeupdated = "contact_phone:9492588888, category:Fault";
+		if (!valuestobeupdated.isEmpty()) {
+			Map<String, Object> keyValuesMap = CommonUtils.getKVPairFromString(valuestobeupdated);
+			
+			System.out.println("Values to be updated in json request are: \n" + keyValuesMap);
+			String updatedJsonRequest = CommonUtils.updateJson(jsonrequest, keyValuesMap);
+			System.out.println("Updated Json Request is: \n" + updatedJsonRequest);
+			context.setAttribute("jsonrequest", updatedJsonRequest);
+			
+		} else {
+			System.out.println("No values to be updated in Request Json so using Request Json from file");
+		}
+		
+		
+		
 	}
 
 
